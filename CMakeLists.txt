@@ -21,24 +21,17 @@ set(ENGINE_LIB_FILES ${CMAKE_CURRENT_LIST_DIR}/lib/glew32s.lib
               ${CMAKE_CURRENT_LIST_DIR}/lib/libglfw3.a
               opengl32.lib)
 
-# Create an executable from the files listed in 'SOURCE_FILES'
-add_executable(engine sandbox.cpp)
-target_include_directories(engine PRIVATE ${src})
-
-
 if(WIN32)
+
+    # Create an executable from the files listed in 'SOURCE_FILES'
+    add_executable(engine sandbox.cpp)
+    target_include_directories(engine PRIVATE ${src})
+
     add_library(windows ${SOURCE_FILES})
+
     target_include_directories(windows PRIVATE ${includes})
     target_compile_definitions(windows PRIVATE -DGLEW_STATIC)
+
     target_link_libraries(windows ${ENGINE_LIB_FILES})
     target_link_libraries(engine PRIVATE windows)
 endif(WIN32)
-
-
-if(UNIX)
-    add_library(linux ${SOURCE_FILES})
-    target_include_directories(linux PRIVATE ${includes})
-    target_compile_definitions(linux PRIVATE -DGLEW_STATIC)
-    target_link_libraries(linux ${ENGINE_LIB_FILES})
-    target_link_libraries(engine PRIVATE windows)
-endif(UNIX)
