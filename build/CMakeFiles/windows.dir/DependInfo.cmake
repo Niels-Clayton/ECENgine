@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Dev/engine/src/engine.cpp" "C:/Dev/engine/build/CMakeFiles/windows.dir/src/engine.cpp.obj"
+  "C:/Dev/engine/src/ECENgine/Application.cpp" "C:/Dev/engine/build/CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

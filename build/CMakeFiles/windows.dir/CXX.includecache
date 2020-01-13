@@ -66,11 +66,15 @@ GL/glext.h
 GL/glu.h
 -
 
-C:/Dev/engine/src/engine.cpp
+C:/Dev/engine/src/ECENgine/Application.cpp
+GL/glew.h
+C:/Dev/engine/src/ECENgine/GL/glew.h
+GLFW/glfw3.h
+C:/Dev/engine/src/ECENgine/GLFW/glfw3.h
 iostream
 -
-GL/glew.h
--
-GLFW/glfw3.h
--
+Application.h
+C:/Dev/engine/src/ECENgine/Application.h
+
+C:/Dev/engine/src/ECENgine/Application.h
 

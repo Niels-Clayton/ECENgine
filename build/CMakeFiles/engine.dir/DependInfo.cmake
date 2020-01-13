@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Dev/engine/sandbox.cpp" "C:/Dev/engine/build/CMakeFiles/engine.dir/sandbox.cpp.obj"
+  "C:/Dev/engine/sandbox/sandbox.cpp" "C:/Dev/engine/build/CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

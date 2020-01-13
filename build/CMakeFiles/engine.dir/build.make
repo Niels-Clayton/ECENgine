@@ -56,28 +56,28 @@ include CMakeFiles/engine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/engine.dir/flags.make
 
-CMakeFiles/engine.dir/sandbox.cpp.obj: CMakeFiles/engine.dir/flags.make
-CMakeFiles/engine.dir/sandbox.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
-CMakeFiles/engine.dir/sandbox.cpp.obj: ../sandbox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/sandbox.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\engine.dir\sandbox.cpp.obj -c C:\Dev\engine\sandbox.cpp
+CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj: CMakeFiles/engine.dir/includes_CXX.rsp
+CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj: ../sandbox/sandbox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\engine.dir\sandbox\sandbox.cpp.obj -c C:\Dev\engine\sandbox\sandbox.cpp
 
-CMakeFiles/engine.dir/sandbox.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/sandbox.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\engine\sandbox.cpp > CMakeFiles\engine.dir\sandbox.cpp.i
+CMakeFiles/engine.dir/sandbox/sandbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/sandbox/sandbox.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\engine\sandbox\sandbox.cpp > CMakeFiles\engine.dir\sandbox\sandbox.cpp.i
 
-CMakeFiles/engine.dir/sandbox.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/sandbox.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\engine\sandbox.cpp -o CMakeFiles\engine.dir\sandbox.cpp.s
+CMakeFiles/engine.dir/sandbox/sandbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/sandbox/sandbox.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\engine\sandbox\sandbox.cpp -o CMakeFiles\engine.dir\sandbox\sandbox.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
-"CMakeFiles/engine.dir/sandbox.cpp.obj"
+"CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
-../bin/engine.exe: CMakeFiles/engine.dir/sandbox.cpp.obj
+../bin/engine.exe: CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj
 ../bin/engine.exe: CMakeFiles/engine.dir/build.make
 ../bin/engine.exe: ../lib/libwindows.a
 ../bin/engine.exe: ../lib/glew32s.lib

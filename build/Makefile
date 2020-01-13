@@ -110,19 +110,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named engine
-
-# Build rule for target.
-engine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 engine
-.PHONY : engine
-
-# fast build rule for target.
-engine/fast:
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/build
-.PHONY : engine/fast
-
-#=============================================================================
 # Target rules for targets named windows
 
 # Build rule for target.
@@ -135,59 +122,72 @@ windows/fast:
 	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
-sandbox.obj: sandbox.cpp.obj
+#=============================================================================
+# Target rules for targets named engine
 
-.PHONY : sandbox.obj
+# Build rule for target.
+engine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 engine
+.PHONY : engine
 
-# target to build an object file
-sandbox.cpp.obj:
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox.cpp.obj
-.PHONY : sandbox.cpp.obj
+# fast build rule for target.
+engine/fast:
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/build
+.PHONY : engine/fast
 
-sandbox.i: sandbox.cpp.i
+sandbox/sandbox.obj: sandbox/sandbox.cpp.obj
 
-.PHONY : sandbox.i
-
-# target to preprocess a source file
-sandbox.cpp.i:
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox.cpp.i
-.PHONY : sandbox.cpp.i
-
-sandbox.s: sandbox.cpp.s
-
-.PHONY : sandbox.s
-
-# target to generate assembly for a file
-sandbox.cpp.s:
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox.cpp.s
-.PHONY : sandbox.cpp.s
-
-src/engine.obj: src/engine.cpp.obj
-
-.PHONY : src/engine.obj
+.PHONY : sandbox/sandbox.obj
 
 # target to build an object file
-src/engine.cpp.obj:
-	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/engine.cpp.obj
-.PHONY : src/engine.cpp.obj
+sandbox/sandbox.cpp.obj:
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj
+.PHONY : sandbox/sandbox.cpp.obj
 
-src/engine.i: src/engine.cpp.i
+sandbox/sandbox.i: sandbox/sandbox.cpp.i
 
-.PHONY : src/engine.i
+.PHONY : sandbox/sandbox.i
 
 # target to preprocess a source file
-src/engine.cpp.i:
-	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/engine.cpp.i
-.PHONY : src/engine.cpp.i
+sandbox/sandbox.cpp.i:
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox/sandbox.cpp.i
+.PHONY : sandbox/sandbox.cpp.i
 
-src/engine.s: src/engine.cpp.s
+sandbox/sandbox.s: sandbox/sandbox.cpp.s
 
-.PHONY : src/engine.s
+.PHONY : sandbox/sandbox.s
 
 # target to generate assembly for a file
-src/engine.cpp.s:
-	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/engine.cpp.s
-.PHONY : src/engine.cpp.s
+sandbox/sandbox.cpp.s:
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/sandbox/sandbox.cpp.s
+.PHONY : sandbox/sandbox.cpp.s
+
+src/ECENgine/Application.obj: src/ECENgine/Application.cpp.obj
+
+.PHONY : src/ECENgine/Application.obj
+
+# target to build an object file
+src/ECENgine/Application.cpp.obj:
+	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj
+.PHONY : src/ECENgine/Application.cpp.obj
+
+src/ECENgine/Application.i: src/ECENgine/Application.cpp.i
+
+.PHONY : src/ECENgine/Application.i
+
+# target to preprocess a source file
+src/ECENgine/Application.cpp.i:
+	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/ECENgine/Application.cpp.i
+.PHONY : src/ECENgine/Application.cpp.i
+
+src/ECENgine/Application.s: src/ECENgine/Application.cpp.s
+
+.PHONY : src/ECENgine/Application.s
+
+# target to generate assembly for a file
+src/ECENgine/Application.cpp.s:
+	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/src/ECENgine/Application.cpp.s
+.PHONY : src/ECENgine/Application.cpp.s
 
 # Help Target
 help:
@@ -195,16 +195,16 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... engine
 	@echo ... windows
+	@echo ... engine
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... sandbox.obj
-	@echo ... sandbox.i
-	@echo ... sandbox.s
-	@echo ... src/engine.obj
-	@echo ... src/engine.i
-	@echo ... src/engine.s
+	@echo ... sandbox/sandbox.obj
+	@echo ... sandbox/sandbox.i
+	@echo ... sandbox/sandbox.s
+	@echo ... src/ECENgine/Application.obj
+	@echo ... src/ECENgine/Application.i
+	@echo ... src/ECENgine/Application.s
 .PHONY : help
 
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "../lib/libwindows.a"
   "../lib/libwindows.pdb"
-  "CMakeFiles/windows.dir/src/engine.cpp.obj"
+  "CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.

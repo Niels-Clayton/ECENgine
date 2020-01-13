@@ -9,29 +9,26 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_LIST_DIR}/bin)
 
 
-# Set source file directory
-set(src ${CMAKE_CURRENT_LIST_DIR}/src)
-# Set header includes directory
-set(includes ${CMAKE_CURRENT_LIST_DIR}/includes)
-# Group all source files under one definition
-set(SOURCE_FILES ${src}/engine.cpp
-                 ${src}/engine.hh)
-
 set(ENGINE_LIB_FILES ${CMAKE_CURRENT_LIST_DIR}/lib/glew32s.lib
-              ${CMAKE_CURRENT_LIST_DIR}/lib/libglfw3.a
-              opengl32.lib)
+                     ${CMAKE_CURRENT_LIST_DIR}/lib/libglfw3.a
+                     opengl32.lib)
+
+# Group all source files under one definition
+set(SOURCE_FILES src/ECENgine/Application.h
+                 src/ECENgine/Application.cpp
+                 src/ECENgine/EntryPoint.h)
 
 if(WIN32)
-
-    # Create an executable from the files listed in 'SOURCE_FILES'
-    add_executable(engine sandbox.cpp)
-    target_include_directories(engine PRIVATE ${src})
-
+    # Create a static library from the files within SOURCE_FILES
     add_library(windows ${SOURCE_FILES})
-
-    target_include_directories(windows PRIVATE ${includes})
     target_compile_definitions(windows PRIVATE -DGLEW_STATIC)
-
+    target_include_directories(windows PRIVATE includes)
     target_link_libraries(windows ${ENGINE_LIB_FILES})
+
+
+    set(SANDBOX_FILES ${CMAKE_CURRENT_LIST_DIR}/Sandbox/sandbox.cpp)
+
+    add_executable(engine ${SANDBOX_FILES})
+    target_include_directories(engine PRIVATE src)
     target_link_libraries(engine PRIVATE windows)
 endif(WIN32)

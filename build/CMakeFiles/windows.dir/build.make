@@ -56,28 +56,28 @@ include CMakeFiles/windows.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/windows.dir/flags.make
 
-CMakeFiles/windows.dir/src/engine.cpp.obj: CMakeFiles/windows.dir/flags.make
-CMakeFiles/windows.dir/src/engine.cpp.obj: CMakeFiles/windows.dir/includes_CXX.rsp
-CMakeFiles/windows.dir/src/engine.cpp.obj: ../src/engine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/windows.dir/src/engine.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\windows.dir\src\engine.cpp.obj -c C:\Dev\engine\src\engine.cpp
+CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj: CMakeFiles/windows.dir/flags.make
+CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj: CMakeFiles/windows.dir/includes_CXX.rsp
+CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj: ../src/ECENgine/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\windows.dir\src\ECENgine\Application.cpp.obj -c C:\Dev\engine\src\ECENgine\Application.cpp
 
-CMakeFiles/windows.dir/src/engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/windows.dir/src/engine.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\engine\src\engine.cpp > CMakeFiles\windows.dir\src\engine.cpp.i
+CMakeFiles/windows.dir/src/ECENgine/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/windows.dir/src/ECENgine/Application.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Dev\engine\src\ECENgine\Application.cpp > CMakeFiles\windows.dir\src\ECENgine\Application.cpp.i
 
-CMakeFiles/windows.dir/src/engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/windows.dir/src/engine.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\engine\src\engine.cpp -o CMakeFiles\windows.dir\src\engine.cpp.s
+CMakeFiles/windows.dir/src/ECENgine/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/windows.dir/src/ECENgine/Application.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Dev\engine\src\ECENgine\Application.cpp -o CMakeFiles\windows.dir\src\ECENgine\Application.cpp.s
 
 # Object files for target windows
 windows_OBJECTS = \
-"CMakeFiles/windows.dir/src/engine.cpp.obj"
+"CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj"
 
 # External object files for target windows
 windows_EXTERNAL_OBJECTS =
 
-../lib/libwindows.a: CMakeFiles/windows.dir/src/engine.cpp.obj
+../lib/libwindows.a: CMakeFiles/windows.dir/src/ECENgine/Application.cpp.obj
 ../lib/libwindows.a: CMakeFiles/windows.dir/build.make
 ../lib/libwindows.a: CMakeFiles/windows.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\lib\libwindows.a"

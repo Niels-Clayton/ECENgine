@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "../bin/engine.exe.manifest"
   "../bin/engine.pdb"
   "../lib/libengine.dll.a"
-  "CMakeFiles/engine.dir/sandbox.cpp.obj"
+  "CMakeFiles/engine.dir/sandbox/sandbox.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.

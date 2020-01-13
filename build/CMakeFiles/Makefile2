@@ -52,14 +52,14 @@ CMAKE_BINARY_DIR = C:\Dev\engine\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/engine.dir/all
 all: CMakeFiles/windows.dir/all
+all: CMakeFiles/engine.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/engine.dir/clean
 clean: CMakeFiles/windows.dir/clean
+clean: CMakeFiles/engine.dir/clean
 
 .PHONY : clean
 
@@ -67,33 +67,6 @@ clean: CMakeFiles/windows.dir/clean
 preinstall:
 
 .PHONY : preinstall
-
-#=============================================================================
-# Target rules for target CMakeFiles/engine.dir
-
-# All Build rule for target.
-CMakeFiles/engine.dir/all: CMakeFiles/windows.dir/all
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/depend
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=1,2 "Built target engine"
-.PHONY : CMakeFiles/engine.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\engine\build\CMakeFiles 4
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/engine.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\engine\build\CMakeFiles 0
-.PHONY : CMakeFiles/engine.dir/rule
-
-# Convenience name for target.
-engine: CMakeFiles/engine.dir/rule
-
-.PHONY : engine
-
-# clean rule for target.
-CMakeFiles/engine.dir/clean:
-	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/clean
-.PHONY : CMakeFiles/engine.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/windows.dir
@@ -121,6 +94,33 @@ windows: CMakeFiles/windows.dir/rule
 CMakeFiles/windows.dir/clean:
 	$(MAKE) -f CMakeFiles\windows.dir\build.make CMakeFiles/windows.dir/clean
 .PHONY : CMakeFiles/windows.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/engine.dir
+
+# All Build rule for target.
+CMakeFiles/engine.dir/all: CMakeFiles/windows.dir/all
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/depend
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Dev\engine\build\CMakeFiles --progress-num=1,2 "Built target engine"
+.PHONY : CMakeFiles/engine.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/engine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\engine\build\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/engine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Dev\engine\build\CMakeFiles 0
+.PHONY : CMakeFiles/engine.dir/rule
+
+# Convenience name for target.
+engine: CMakeFiles/engine.dir/rule
+
+.PHONY : engine
+
+# clean rule for target.
+CMakeFiles/engine.dir/clean:
+	$(MAKE) -f CMakeFiles\engine.dir\build.make CMakeFiles/engine.dir/clean
+.PHONY : CMakeFiles/engine.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

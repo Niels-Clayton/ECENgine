@@ -6,3 +6,21 @@
 
 #IncludeRegexTransform: 
 
+../src/ECENgine.h
+stdio.h
+-
+ECENgine/EntryPoint.h
+../src/ECENgine/EntryPoint.h
+ECENgine/Application.h
+../src/ECENgine/Application.h
+
+../src/ECENgine/Application.h
+
+../src/ECENgine/EntryPoint.h
+Application.h
+../src/ECENgine/Application.h
+
+C:/Dev/engine/sandbox/sandbox.cpp
+ECENgine.h
+-
+
