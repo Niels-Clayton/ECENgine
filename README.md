@@ -1,2 +1,2 @@
 # ECENgine
-2D/3D engine built upon openGL.
+2D/3D engine built with openGL.

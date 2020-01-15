@@ -3,7 +3,7 @@
 //
 #pragma once
 
-namespace ECENgine {
+namespace ECEN{
     class Application {
     public:
         Application();

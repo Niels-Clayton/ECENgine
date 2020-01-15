@@ -3,10 +3,10 @@
 //
 #include "GL/glew.h"
 #include "GLFW/glfw3.h"
-#include <iostream>
 #include "Application.h"
+#include <iostream>
 
-namespace ECENgine {
+namespace ECEN{
     Application::Application(){
 
     }
@@ -56,13 +56,17 @@ namespace ECENgine {
             std::cout<<"GLEW Init failed"<<std::endl;
         }
 
-        std::cout<<glGetString(GL_VERSION)<<std::endl;
-
         /* Loop until the user closes the window */
         while (!glfwWindowShouldClose(window))
         {
             /* Render here */
             glClear(GL_COLOR_BUFFER_BIT);
+
+            glBegin(GL_TRIANGLES);
+            glVertex2f(-0.5f, 0.25f);
+            glVertex2f(0.5f, 0.25f);
+            glVertex2f(0.0f, -0.75f);
+            glEnd();
 
             glBegin(GL_TRIANGLES);
             glVertex2f(-0.5f, -0.5f);

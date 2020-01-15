@@ -3,11 +3,10 @@
 //
 #pragma once
 
-#include <stdio.h>
-
 // -------- Entry point --------
 #include "ECENgine/EntryPoint.h"
 // -----------------------------
 
 #include "ECENgine/Application.h"
+#include "ECENgine/Log.h"
 

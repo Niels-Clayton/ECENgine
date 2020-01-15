@@ -1,6 +1,6 @@
 #include <ECENgine.h>
 
-class Sandbox : public ECENgine::Application{
+class Sandbox : public ECEN::Application{
 public:
     Sandbox(){
 
@@ -11,6 +11,6 @@ public:
     }
 };
 
-ECENgine::Application* ECENgine::CreateApplication(){
+ECEN::Application* ECEN::CreateApplication(){
     return new Sandbox();
 }
