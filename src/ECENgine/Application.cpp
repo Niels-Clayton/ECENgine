@@ -4,7 +4,6 @@
 #include "GL/glew.h"
 #include "GLFW/glfw3.h"
 #include "Application.h"
-#include <iostream>
 
 namespace ECEN{
     Application::Application(){

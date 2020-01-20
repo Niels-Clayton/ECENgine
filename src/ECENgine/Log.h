@@ -24,11 +24,10 @@ namespace ECEN{
 #define ECEN_CORE_INFO(...)     ::ECEN::Log::GetCoreLogger()->info(__VA_ARGS__)
 #define ECEN_CORE_WARN(...)     ::ECEN::Log::GetCoreLogger()->warn(__VA_ARGS__)
 #define ECEN_CORE_ERROR(...)    ::ECEN::Log::GetCoreLogger()->error(__VA_ARGS__)
-#define ECEN_CORE_FATAL(...)    ::ECEN::Log::GetCoreLogger()->fatal(__VA_ARGS__)
 
 #define ECEN_TRACE(...)         ::ECEN::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define ECEN_INFO(...)          ::ECEN::Log::GetClientLogger()->info(__VA_ARGS__)
 #define ECEN_WARN(...)          ::ECEN::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define ECEN_ERROR(...)         ::ECEN::Log::GetClientLogger()->error(__VA_ARGS__)
-#define ECEN_FATAL(...)         ::ECEN::Log::GetClientLogger()->fatal(__VA_ARGS__)
+
 
