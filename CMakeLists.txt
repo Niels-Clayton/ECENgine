@@ -14,15 +14,18 @@ set(ENGINE_LIB_FILES ${CMAKE_CURRENT_LIST_DIR}/lib/glew32s.lib
                      opengl32.lib)
 
 # Group all source files under one definition
-set(SOURCE_FILES src/ECENgine/Application.h
+set(SOURCE_FILES src/ECENgine.h
+                 src/ECENgine/Application.h
                  src/ECENgine/Application.cpp
                  src/ECENgine/EntryPoint.h
                  src/ECENgine/Log.cpp
                  src/ECENgine/Log.h)
 
-set(ENGINE_INCLUDE_DIR includes module/spdlog/include)
+set(ENGINE_INCLUDE_DIR module/spdlog/include
+                       includes)
 
-set(SANDBOX_INCLUDE_DIR src module/spdlog/include)
+set(SANDBOX_INCLUDE_DIR module/spdlog/include
+                        src)
 
 if(WIN32)
     # Create a static library from the files within SOURCE_FILES

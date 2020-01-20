@@ -9,10 +9,10 @@
 int main(int argc, char** argv){
 
     ECEN::Log::Init();
-    ECEN_CORE_WARN("Initialized logger in engine");
-    ECEN_INFO("Howdy Var={0}", 5);
+    ECEN_CORE_ERROR("Initialized logger in engine");
+    ECEN_TRACE("Howdy {0}", "Nakisa");
 
-    auto test = ECEN::CreateApplication();
-    test->test();
-    delete test;
+    auto app = ECEN::CreateApplication();
+    app->test();
+    delete app;
 }

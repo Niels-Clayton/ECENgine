@@ -3,6 +3,8 @@
 //
 #pragma once
 
+#include <iostream>
+
 // -------- Entry point --------
 #include "ECENgine/EntryPoint.h"
 // -----------------------------
